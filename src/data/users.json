@@ -1,0 +1,10 @@
+{
+  "testUser@test.com": {
+    "id": "435267",
+    "name": "Test User",
+    "email": "testUser@test.com",
+    "password": "12345",
+    "isPoster": true,
+    "isSeeker": true
+  }
+}

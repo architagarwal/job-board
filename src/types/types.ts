@@ -35,4 +35,11 @@ export type PostResponse = {
   message: string
 }
 
+export type LoginState = {
+  email: string;
+  password: string;
+}
+
 export type ChangeEvent = React.ChangeEvent<HTMLInputElement>
+
+export type FormEvent = React.FormEvent<HTMLFormElement>

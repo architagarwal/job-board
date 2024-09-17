@@ -1,5 +1,5 @@
 "use client"
-import React, {useState, useEffect, useCallback} from "react";
+import React, { useState, useEffect } from "react";
 import { useSearchParams } from 'next/navigation';
 import { Job, ChangeEvent } from "@/types/types";
 import DisplayText from "@/Components/DisplayText";

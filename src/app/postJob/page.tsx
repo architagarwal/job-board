@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import { formatDate } from "../utils/utils";
 import { toast } from "react-toastify";
 import { useRouter } from 'next/navigation';
+import { FormEvent } from "@/types/types";
 
 interface JobState {
   title: string;
@@ -47,7 +48,7 @@ const PostJob = () => {
     setJobState(newJobState);
   }
 
-  const onSubmit = async (e:any) => {
+  const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
     const response = await fetch('/api/postJob', {
       method: 'POST',
